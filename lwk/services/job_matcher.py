@@ -42,6 +42,8 @@ class JobMatcher:
         if keyword_match:
             score += self.KEYWORD_SCORE
 
+        print("DEBUG/ Match score:", score)
+
         return MatchResult(
             score=score,
             city_match=city_match,

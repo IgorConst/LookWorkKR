@@ -1,6 +1,11 @@
 from pathlib import Path
 import json
 
+DEFAULT_FILE = (
+    Path(__file__).parent
+    / "data"
+    / "seen_jobs.json"
+)
 
 class SeenJobsStore:
     """
@@ -12,7 +17,7 @@ class SeenJobsStore:
 
     def __init__(
         self,
-        file_path: str = "data/seen_jobs.json",
+        file_path: str | Path = DEFAULT_FILE,
     ) -> None:
 
         self.file_path = Path(file_path)
