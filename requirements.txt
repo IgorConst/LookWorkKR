@@ -5,3 +5,5 @@ pydantic-settings==2.4.0
 python-dotenv==1.0.1
 loguru==0.7.2
 greenlet==3.0.3
+requests>=2.32.0
+BeautifulSoup4>=4.13.4

@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "name": "Igor",
+      "telegram_id": 123456789,
+
+      "cities": [
+        "Синчанг",
+        "Асан"
+      ],
+
+      "min_salary": 2500000,
+
+      "required_visas": [
+        "F4"
+      ],
+
+      "keywords": [
+        "чориб",
+        "сачуль",
+        "производство"
+      ]
+    },
+    {
+      "name": "Tamara",
+      "telegram_id": 987654321,
+
+      "cities": [
+        "Пхёнтэк"
+      ],
+
+      "min_salary": 3200000,
+
+      "required_visas": [
+        "F4"
+      ],
+
+      "keywords": [
+        "упаковка",
+        "производство"
+      ]
+    }
+  ]
+}

@@ -11,16 +11,23 @@ Korect/KoWork collector v0.1
 Без БД.
 Без Telegram.
 Без OpenAI.
+=====
+TB moved to LWK/__main__.py
+for Imports use syntax like -- from lwk.services.job_matcher import Foo
 """
+from bs4 import BeautifulSoup
 
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
-# from pathlib import Path
-from korect_seen_jobs import SeenJobsStore
 
-import requests
+# from pathlib import Path
+#from lwk.scrapers.korect_seen_jobs import SeenJobsStore
+
+import requests  # type: ignore
 # import json
+#from lwk.services.job_matcher import JobMatcher
+#from lwk.models.user_profile import UserProfile
 
 API_URL = "https://korect.kr/api/v1/jobs"
 
@@ -32,8 +39,14 @@ class JobDto:
     title: str
     description: str
 
-    city: Optional[str]
+    #city: Optional[str]
     location: Optional[str]
+    city_ru: Optional[str]
+    city_ko: Optional[str]
+    city_en: Optional[str]
+
+    latitude: Optional[float]
+    longitude: Optional[float]
 
     salary_min: Optional[int]
     salary_max: Optional[int]
@@ -85,18 +98,28 @@ class KorectCollector:
 
         for item in payload.get("data", []):
 
+                    
+            city_info = item.get("cityTranslation") or {}      
+
             jobs.append(
                 JobDto(
                     external_id=item.get("id"),
 
                     title=item.get("title", "").strip(),
 
-                    description=item.get("description", "").strip(),
+                    description=clean_html(item.get("description", "")).strip(),
 
-                    city=item.get("city"),
+                    #city=item.get("city"),
+
+                    city_ru = city_info.get("nameRu"),
+                    city_ko = city_info.get("nameKo"),
+                    city_en = city_info.get("nameEn"),
 
                     location=item.get("location"),
 
+                    latitude = city_info.get("latitude"),
+                    longitude = city_info.get("longitude"),
+                    
                     salary_min=item.get("salaryMin"),
 
                     salary_max=item.get("salaryMax"),
@@ -127,8 +150,7 @@ class KorectCollector:
             )
         except ValueError:
             return None
-
-
+        
 def print_jobs(jobs: list[JobDto]) -> None:
     print()
     print("=" * 80)
@@ -140,7 +162,7 @@ def print_jobs(jobs: list[JobDto]) -> None:
         print()
         print(f"[{index}] {job.title}")
 
-        print(f"City:      {job.city}")
+        print(f"City:      {job.city_ru}")
         print(f"Location:  {job.location}")
 
         print(
@@ -166,42 +188,11 @@ def print_jobs(jobs: list[JobDto]) -> None:
         if len(job.description) > 300:
             print("...")
 
+def clean_html(text: str) -> str:
+    if not text:
+        return ""
 
-def main() -> None:
-    collector = KorectCollector()
-
-    jobs = collector.get_latest_jobs()
-
-    store = SeenJobsStore()
-
-    new_jobs = []
-
-    for job in jobs:
-
-        if store.contains(job.external_id):
-            continue
-
-        new_jobs.append(job)
-
-    print()
-    print(f"NEW JOBS FOUND: {len(new_jobs)}")
-
-    print()
-
-    for job in new_jobs:
-
-        print(job.title)
-
-    store.mark_seen(
-        [job.external_id for job in new_jobs]
-    )
-
-    #collector = KorectCollector()
-
-    #jobs = collector.get_latest_jobs()
-
-    #   print_jobs(jobs)
-
-
-if __name__ == "__main__":
-    main()
+    return BeautifulSoup(
+        text,
+        "html.parser"
+    ).get_text("\n")

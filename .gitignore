@@ -1,1 +1,11 @@
+# Ignore the local environment variables file
 .env
+
+# Ignore any specific environment variants
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Explicitly track the template/example file (do NOT ignore this)
+!.env.example
