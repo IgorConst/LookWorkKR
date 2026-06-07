@@ -1,14 +1,28 @@
+import os
+from unittest import result
+
+from dotenv import load_dotenv
+
 from lwk.scrapers.korect_collector import KorectCollector
 from lwk.scrapers.korect_seen_jobs import SeenJobsStore
+from lwk.services.telegram_sender import TelegramSender
 
 from lwk.services.profile_loader import load_profiles
 from lwk.services.job_matcher import JobMatcher
 
-
 MIN_MATCH_SCORE = 50
 
-
 def main() -> None:
+
+    load_dotenv()  # loads .env into environment variables
+    
+
+    telegram_token = os.getenv("TELEGRAM_BOT_TOKEN")
+    
+    if not telegram_token:
+        raise ValueError("TELEGRAM_BOT_TOKEN is missing in .env")
+
+    sender = TelegramSender(bot_token=telegram_token)
 
     print()
     print("=== LWK START ===")
@@ -81,6 +95,17 @@ def main() -> None:
                 f" keyword={result.keyword_match}"
             )
 
+            #### Here you can add code to send notifications about the match, e.g. via Telegram
+            message = build_message(
+                job,
+                result,
+            )
+
+            sender.send(
+                profile.telegram_id,
+                message,
+            )
+
     seen_store.mark_seen(
         [job.external_id for job in new_jobs]
     )
@@ -89,3 +114,77 @@ def main() -> None:
     print(f"Matches found: {matches_found}")
     print()
     print("=== LWK FINISH ===")
+
+
+def build_message(job, result) -> str:
+
+    reasons = []
+
+    if result.city_match:
+        reasons.append("город")
+
+    if result.salary_match:
+        reasons.append("зарплата")
+
+    if result.visa_match:
+        reasons.append("виза")
+
+    if result.keyword_match:
+        reasons.append("ключевые слова")
+
+    salary = "не указана"
+
+    if job.salary_min and job.salary_max:
+        salary = (
+            f"{job.salary_min:,} - "
+            f"{job.salary_max:,} KRW"
+        )
+
+    elif job.salary_max:
+        salary = (
+            f"до {job.salary_max:,} KRW"
+        )
+
+    elif job.salary_min:
+        salary = (
+            f"от {job.salary_min:,} KRW"
+        )
+
+    lines = [
+        job.title,
+        "",
+    ]
+
+    if job.city_ru:
+        lines.append(
+            f"📍 {job.city_ru}"
+        )
+
+    lines.append(
+        f"Зарплата: {salary}"
+    )
+
+    if job.phone:
+        lines.append(
+            f"☎ {job.phone}"
+        )
+
+    lines.append("")
+
+    if job.description:
+
+        preview = (
+            job.description[:300]
+            .replace("\n\n", "\n")
+            .strip()
+        )
+
+        lines.append(preview)
+        lines.append("")
+
+    lines.append(
+        f"Совпадение: {result.score} "
+        f"({', '.join(reasons)})"
+    )
+
+    return "\n".join(lines)
