@@ -1,7 +1,8 @@
 import os
-from unittest import result
+import time
 
 from dotenv import load_dotenv
+#from sqlalchemy import TIME
 
 from lwk.scrapers.korect_collector import KorectCollector
 from lwk.scrapers.korect_seen_jobs import SeenJobsStore
@@ -12,8 +13,18 @@ from lwk.services.job_matcher import JobMatcher
 
 MIN_MATCH_SCORE = 50
 
-def main() -> None:
+CHECK_INTERVAL = 300  # 5 минут=> 300 с
 
+def main():
+    while True:
+        try:
+            run_once()
+        except Exception as e:
+            print(f"Error: {e}")
+
+        time.sleep(CHECK_INTERVAL)
+
+def run_once():
     load_dotenv()  # loads .env into environment variables
     
 
@@ -101,10 +112,22 @@ def main() -> None:
                 result,
             )
 
-            sender.send(
-                profile.telegram_id,
-                message,
-            )
+            try:
+                sender.send(
+                    profile.telegram_id,
+                    message,
+                )
+
+                print(
+                    f"Telegram sent to {profile.name}"
+                )
+
+            except Exception as ex:
+
+                print(
+                    f"Telegram failed for "
+                    f"{profile.name}: {ex}"
+                )
 
     seen_store.mark_seen(
         [job.external_id for job in new_jobs]

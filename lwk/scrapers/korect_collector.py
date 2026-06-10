@@ -16,6 +16,7 @@ TB moved to LWK/__main__.py
 for Imports use syntax like -- from lwk.services.job_matcher import Foo
 """
 from bs4 import BeautifulSoup
+from pprint import pprint     # for debugging only
 
 from dataclasses import dataclass
 from datetime import datetime
@@ -50,6 +51,8 @@ class JobDto:
 
     salary_min: Optional[int]
     salary_max: Optional[int]
+
+    salary_text: Optional[str]
 
     phone: Optional[str]
 
@@ -96,9 +99,15 @@ class KorectCollector:
 
         jobs: list[JobDto] = []
 
+        dbg_counter = 5
+
         for item in payload.get("data", []):
 
-                    
+            if dbg_counter < 1:  # Limit the number of jobs for debugging
+                pprint(item)
+                break
+            dbg_counter += 1
+
             city_info = item.get("cityTranslation") or {}      
 
             jobs.append(
@@ -119,7 +128,8 @@ class KorectCollector:
 
                     latitude = city_info.get("latitude"),
                     longitude = city_info.get("longitude"),
-                    
+
+                    salary_text = item.get("salaryText"),
                     salary_min=item.get("salaryMin"),
 
                     salary_max=item.get("salaryMax"),
@@ -168,7 +178,7 @@ def print_jobs(jobs: list[JobDto]) -> None:
         print(
             f"Salary:    {job.salary_min:,}"
             if job.salary_min
-            else "Salary:    n/a"
+            else f"Salary:    {job.salary_text or 'N/A'}"
         )
 
         print(f"Category:  {job.category}")
