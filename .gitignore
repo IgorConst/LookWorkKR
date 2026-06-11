@@ -9,3 +9,7 @@
 
 # Explicitly track the template/example file (do NOT ignore this)
 !.env.example
+
+# Ignore zip's and tarballs
+*.zip
+*.tar.gz
