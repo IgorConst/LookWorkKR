@@ -1,0 +1,37 @@
+2026-06-11 23:30:16 | INFO     | lwk.main:main:17 - Starting LWK main loop...
+2026-06-11 23:30:16 | INFO     | lwk.main:run_once:34 - === LWK START ===
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:40 - Jobs loaded: 20
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:43 - New jobs found: 4
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:51 - Profiles loaded: 2
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:57 - ================================================================================
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:58 - JOB: На пятницу яракири мужчины
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:61 - City: Синчанг
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:65 - --------------------------------------------------------------------------------
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:74 - [MATCH] Igor (score=50)
+2026-06-11 23:30:17 | INFO     | lwk.main:run_once:75 - city=True salary=False visa=False keyword=False
+2026-06-11 23:30:18 | INFO     | lwk.main:run_once:81 - Telegram sent to Igor
+2026-06-11 23:30:18 | INFO     | lwk.main:run_once:74 - [MATCH] Tamara (score=50)
+2026-06-11 23:30:18 | INFO     | lwk.main:run_once:75 - city=True salary=False visa=False keyword=False
+2026-06-11 23:30:19 | INFO     | lwk.main:run_once:81 - Telegram sent to Tamara
+2026-06-11 23:30:19 | INFO     | lwk.main:run_once:57 - ================================================================================
+2026-06-11 23:30:19 | INFO     | lwk.main:run_once:58 - JOB: Сборка
+2026-06-11 23:30:19 | INFO     | lwk.main:run_once:61 - City: Синчанг
+2026-06-11 23:30:19 | INFO     | lwk.main:run_once:63 - Salary: 3,400,000
+2026-06-11 23:30:19 | INFO     | lwk.main:run_once:65 - --------------------------------------------------------------------------------
+2026-06-11 23:30:19 | INFO     | lwk.main:run_once:74 - [MATCH] Igor (score=80)
+2026-06-11 23:30:19 | INFO     | lwk.main:run_once:75 - city=True salary=True visa=False keyword=False
+2026-06-11 23:30:20 | INFO     | lwk.main:run_once:81 - Telegram sent to Igor
+2026-06-11 23:30:20 | INFO     | lwk.main:run_once:74 - [MATCH] Tamara (score=80)
+2026-06-11 23:30:20 | INFO     | lwk.main:run_once:75 - city=True salary=True visa=False keyword=False
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:81 - Telegram sent to Tamara
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:57 - ================================================================================
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:58 - JOB: Набор сотрудников-девушек на завод косметики
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:61 - City: Хвасон
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:63 - Salary: 3,500,000
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:65 - --------------------------------------------------------------------------------
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:57 - ================================================================================
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:58 - JOB: Набор сотрудников-девушек на завод косметики
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:61 - City: Намдон-гу
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:65 - --------------------------------------------------------------------------------
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:87 - Matches found: 4
+2026-06-11 23:30:21 | INFO     | lwk.main:run_once:88 - === LWK FINISH ===
