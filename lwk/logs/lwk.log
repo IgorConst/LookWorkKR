@@ -35,3 +35,313 @@
 2026-06-11 23:30:21 | INFO     | lwk.main:run_once:65 - --------------------------------------------------------------------------------
 2026-06-11 23:30:21 | INFO     | lwk.main:run_once:87 - Matches found: 4
 2026-06-11 23:30:21 | INFO     | lwk.main:run_once:88 - === LWK FINISH ===
+2026-06-12 07:12:45 | INFO     | lwk.main:main:23 - Starting LWK main loop...
+2026-06-12 07:12:45 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:54 - New jobs found: 2
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:62 - Profiles loaded: 2
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:69 - JOB: Кафе повар русская кухня
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:72 - City: Весь Пусан
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:69 - JOB: Производство турбин
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:72 - City: Дунпо
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-12 07:12:46 | INFO     | lwk.main:run_once:86 - city=False salary=True visa=True keyword=True
+2026-06-12 07:12:47 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-12 07:12:47 | INFO     | lwk.main:run_once:85 - [MATCH] Tamara (score=50)
+2026-06-12 07:12:47 | INFO     | lwk.main:run_once:86 - city=False salary=True visa=True keyword=True
+2026-06-12 07:12:48 | INFO     | lwk.main:run_once:92 - Telegram sent to Tamara
+2026-06-12 07:12:48 | INFO     | lwk.main:run_once:98 - Matches found: 2
+2026-06-12 07:12:48 | INFO     | lwk.main:run_once:99 - === LWK FINISH ===
+2026-06-12 07:13:19 | INFO     | lwk.main:main:23 - Starting LWK main loop...
+2026-06-12 07:13:19 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-12 07:13:20 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-12 07:13:20 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-12 07:13:20 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-12 07:13:20 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 07:30:19 | INFO     | lwk.main:main:23 - Starting LWK main loop...
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:54 - New jobs found: 16
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:62 - Profiles loaded: 2
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:69 - JOB: Сортировка и упаковка белья
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:72 - City: Пхёнтхэк
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:74 - Salary: 120,000
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:69 - JOB: Системные леса
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:72 - City: Сувон
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:19 | INFO     | lwk.main:run_once:69 - JOB: Автомобилка  Чикеча
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:72 - City: Чинчхон-гун
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:74 - Salary: 3,300,000
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:69 - JOB: Повар и помощник по кухне
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:72 - City: Ансан
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:69 - JOB: Производство картона
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:72 - City: Весь Инчхон
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:69 - JOB: Сборка кулеров
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:72 - City: Дунпо
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:69 - JOB: Логистика и комса
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:72 - City: Синчанг
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:74 - Salary: 2,600,000
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-14 07:30:20 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-14 07:30:21 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-14 07:30:21 | INFO     | lwk.main:run_once:85 - [MATCH] Tamara (score=80)
+2026-06-14 07:30:21 | INFO     | lwk.main:run_once:86 - city=True salary=True visa=False keyword=False
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:92 - Telegram sent to Tamara
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:69 - JOB: Чорип комса
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:72 - City: Хвасон
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:69 - JOB: Косметика ильтан
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:72 - City: Намдон-гу
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:69 - JOB: Помощница на кухню
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:72 - City: Синчанг
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-14 07:30:22 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-14 07:30:23 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-14 07:30:23 | INFO     | lwk.main:run_once:85 - [MATCH] Tamara (score=50)
+2026-06-14 07:30:23 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-14 07:30:25 | INFO     | lwk.main:run_once:92 - Telegram sent to Tamara
+2026-06-14 07:30:25 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:25 | INFO     | lwk.main:run_once:69 - JOB: Сортировка пластиковых панелей
+2026-06-14 07:30:25 | INFO     | lwk.main:run_once:72 - City: Асан
+2026-06-14 07:30:25 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:25 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-14 07:30:25 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-14 07:30:26 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-14 07:30:26 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:26 | INFO     | lwk.main:run_once:69 - JOB: Сборка упаковка жен
+2026-06-14 07:30:26 | INFO     | lwk.main:run_once:72 - City: Асан
+2026-06-14 07:30:26 | INFO     | lwk.main:run_once:74 - Salary: 115,000
+2026-06-14 07:30:26 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:26 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-14 07:30:26 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-14 07:30:27 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-14 07:30:27 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:27 | INFO     | lwk.main:run_once:69 - JOB: Наклейка пленки девушка с 16 числа
+2026-06-14 07:30:27 | INFO     | lwk.main:run_once:72 - City: Синчанг
+2026-06-14 07:30:27 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:27 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-14 07:30:27 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-14 07:30:28 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-14 07:30:28 | INFO     | lwk.main:run_once:85 - [MATCH] Tamara (score=50)
+2026-06-14 07:30:28 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:92 - Telegram sent to Tamara
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:69 - JOB: Комса девушка
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:72 - City: Чхонан
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:69 - JOB: Упаковка проверка батареек
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:72 - City: Танджин
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:74 - Salary: 110,000
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:69 - JOB: Яган сегодня
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:72 - City: Весь Инчхон
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:98 - Matches found: 8
+2026-06-14 07:30:30 | INFO     | lwk.main:run_once:99 - === LWK FINISH ===
+2026-06-14 07:35:30 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 07:35:30 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 07:35:30 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 07:35:30 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 07:35:30 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 07:40:30 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 07:40:31 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 07:40:31 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 07:40:31 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 07:40:31 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 07:45:31 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 07:45:31 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 07:45:32 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 07:45:32 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 07:45:32 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 07:50:32 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 07:50:32 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 07:50:32 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 07:50:32 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 07:50:32 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 07:55:32 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 07:55:33 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 07:55:33 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 07:55:33 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 07:55:33 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 08:00:33 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 08:00:33 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 08:00:33 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 08:00:33 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 08:00:33 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 08:05:33 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 08:05:34 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 08:05:34 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 08:05:34 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 08:05:34 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 08:10:34 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 08:10:35 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 08:10:35 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 08:10:35 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 08:10:35 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 08:15:35 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 08:15:35 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 08:15:35 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 08:15:35 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 08:15:35 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 08:20:35 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 08:20:36 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 08:20:36 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 08:20:36 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 08:20:36 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 08:25:36 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 08:25:37 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 08:25:37 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 08:25:37 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 08:25:37 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 08:30:37 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 08:30:38 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 08:30:38 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 08:30:38 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 08:30:38 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-14 08:35:38 | WARNING  | lwk.main:main:26 - Stop flag detected! Shutting down gracefully...
+2026-06-14 08:40:15 | INFO     | lwk.main:main:23 - Starting LWK main loop...
+2026-06-14 08:40:15 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-14 08:40:16 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-14 08:40:16 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-14 08:40:16 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-14 08:40:16 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
+2026-06-15 06:34:37 | INFO     | lwk.main:main:23 - Starting LWK main loop...
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:54 - New jobs found: 19
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:62 - Profiles loaded: 2
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:69 - JOB: Автомобилка
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:72 - City: Кёнджу
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:69 - JOB: Снс ручная и авто
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:72 - City: Кимхэ
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:74 - Salary: 3,700,000
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:69 - JOB: Стройка Инчхон
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:72 - City: Весь Инчхон
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:69 - JOB: Склад СУ
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:72 - City: Кимхэ
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:69 - JOB: Автозавод яган чуган
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:72 - City: Ансан
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:69 - JOB: Ульсан мохва камсаги
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:72 - City: Весь Ульсан
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:69 - JOB: Автомобилка
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:72 - City: Кимхэ
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:69 - JOB: Женщины Инчхон
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:72 - City: Со-гу
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-15 06:34:37 | INFO     | lwk.main:run_once:86 - city=False salary=True visa=True keyword=True
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:69 - JOB: Комса пуджан
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:72 - City: Ансан
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:69 - JOB: Сборка охладителей для EV и радиаторов
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:72 - City: Весь Чхуннам
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:69 - JOB: Сачуль
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:72 - City: Весь Чхуннам
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:69 - JOB: Яган диски
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:72 - City: Синчанг
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:74 - Salary: 160,000
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-15 06:34:39 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-15 06:34:40 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-15 06:34:40 | INFO     | lwk.main:run_once:85 - [MATCH] Tamara (score=50)
+2026-06-15 06:34:40 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-15 06:34:41 | INFO     | lwk.main:run_once:92 - Telegram sent to Tamara
+2026-06-15 06:34:41 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:41 | INFO     | lwk.main:run_once:69 - JOB: Автозавод яган чуган
+2026-06-15 06:34:41 | INFO     | lwk.main:run_once:72 - City: Синчанг
+2026-06-15 06:34:41 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:41 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=60)
+2026-06-15 06:34:41 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=True keyword=False
+2026-06-15 06:34:42 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-15 06:34:42 | INFO     | lwk.main:run_once:85 - [MATCH] Tamara (score=60)
+2026-06-15 06:34:42 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=True keyword=False
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:92 - Telegram sent to Tamara
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:69 - JOB: Лазера
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:72 - City: Есан-гун
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:74 - Salary: 3,500,000
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:69 - JOB: Производство токк Ильтан
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:72 - City: Янсан
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:69 - JOB: Чурип женский
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:72 - City: Ёнин
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:69 - JOB: Упаковка дисков
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:72 - City: Синчанг
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=50)
+2026-06-15 06:34:43 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-15 06:34:44 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-15 06:34:44 | INFO     | lwk.main:run_once:85 - [MATCH] Tamara (score=50)
+2026-06-15 06:34:44 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=False
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:92 - Telegram sent to Tamara
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:69 - JOB: Завод металла
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:72 - City: Танджин
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:74 - Salary: 3,300,000
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:68 - ================================================================================
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:69 - JOB: Сачуль яган чуган
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:72 - City: Асан
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:76 - --------------------------------------------------------------------------------
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:85 - [MATCH] Igor (score=60)
+2026-06-15 06:34:45 | INFO     | lwk.main:run_once:86 - city=True salary=False visa=False keyword=True
+2026-06-15 06:34:46 | INFO     | lwk.main:run_once:92 - Telegram sent to Igor
+2026-06-15 06:34:46 | INFO     | lwk.main:run_once:98 - Matches found: 8
+2026-06-15 06:34:46 | INFO     | lwk.main:run_once:99 - === LWK FINISH ===
+2026-06-15 06:39:46 | INFO     | lwk.main:run_once:45 - === LWK START ===
+2026-06-15 06:39:47 | INFO     | lwk.main:run_once:51 - Jobs loaded: 20
+2026-06-15 06:39:47 | INFO     | lwk.main:run_once:54 - New jobs found: 0
+2026-06-15 06:39:47 | INFO     | lwk.main:run_once:57 - No new jobs.
+2026-06-15 06:39:47 | INFO     | lwk.main:run_once:58 - === LWK FINISH ===
